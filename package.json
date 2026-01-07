@@ -1,0 +1,27 @@
+{
+  "name": "url-shortener-app",
+  "version": "1.0.0",
+  "description": "Full-stack URL Shortener Application",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "start": "concurrently \"npm run backend:start\" \"npm run frontend:start\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:start": "cd frontend && npm run preview",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "author": "Nabeel Ahsan",
+  "license": "MIT",
+  "keywords": [
+    "url-shortener",
+    "fullstack",
+    "react",
+    "express",
+    "nodejs"
+  ]
+}
